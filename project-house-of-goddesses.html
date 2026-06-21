@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>House of Goddesses — Case Study — Rina Benamar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { cream:'#FAF6F0', creamdeep:'#F2EBE1', sakura:'#F3DCE2', sakuradeep:'#C98A9C',
+        matcha:'#8B9B6E', matchadeep:'#4F5A3C', gold:'#C6A664', ink:'#2A2823', inksoft:'#6B6760' },
+      fontFamily: { display:['Playfair Display','Georgia','serif'], body:['Lora','Georgia','serif'], sans:['Montserrat','sans-serif'] }
+    }}
+  }
+</script>
+</head>
+<body class="bg-cream text-ink font-body">
+
+<!-- ============ NAVIGATION ============ -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="index.html" class="font-display italic text-xl tracking-wide">Rina Benamar</a>
+    <nav class="hidden md:flex items-center gap-10">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link active">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5" aria-label="Open menu" aria-expanded="false">
+      <span class="block w-6 h-px bg-ink"></span>
+      <span class="block w-6 h-px bg-ink"></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu md:hidden absolute top-full left-0 right-0 bg-cream border-b border-ink/10">
+    <nav class="flex flex-col px-6 py-6 gap-5">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link active">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ CASE STUDY HERO ============ -->
+<section class="pt-40 pb-16 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal flex items-center gap-4 mb-6">
+      <div class="hanko">美神</div>
+      <span class="label-eyebrow">Case Study 02 · Brand Identity &amp; Motion</span>
+    </div>
+    <h1 class="reveal d1 font-display italic text-4xl md:text-6xl mb-4">House of Goddesses</h1>
+    <p class="reveal d2 font-body text-inksoft max-w-2xl">
+      A complete brand identity for an elevated beauty label — logotype, packaging, and motion graphics built around feminine power, ritual, and mythology.
+    </p>
+
+    <div class="reveal d3 grid grid-cols-2 md:grid-cols-4 gap-6 mt-10 pt-8 border-t border-ink/10">
+      <div>
+        <p class="font-sans text-xs tracking-widest uppercase text-sakuradeep mb-1">Client</p>
+        <p class="font-display italic">House of Goddesses</p>
+      </div>
+      <div>
+        <p class="font-sans text-xs tracking-widest uppercase text-sakuradeep mb-1">Sector</p>
+        <p class="font-display italic">Beauty &amp; Wellness</p>
+      </div>
+      <div>
+        <p class="font-sans text-xs tracking-widest uppercase text-sakuradeep mb-1">Role</p>
+        <p class="font-display italic">Brand Designer &amp; Art Director</p>
+      </div>
+      <div>
+        <p class="font-sans text-xs tracking-widest uppercase text-sakuradeep mb-1">Deliverables</p>
+        <p class="font-display italic">Identity, Packaging, Motion</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hero image -->
+<section class="px-6 md:px-10 pb-20">
+  <div class="max-w-6xl mx-auto reveal">
+    <div class="case-figure ar-16-9" style="background:#8B6347;">
+      <img src="https://rinaffff.github.io/rina-portfolio/assets/hog_design_1.jpg" alt="House of Goddesses — LAMB monogram identity" loading="lazy" style="object-fit:contain;"/>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTEXT & BRIEF ============ -->
+<section class="px-6 md:px-10 py-16 bg-creamdeep">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-[200px_1fr] gap-10">
+    <span class="label-eyebrow reveal">Context &amp; Brief</span>
+    <div class="reveal d1">
+      <h2 class="font-display italic text-2xl md:text-3xl mb-4">A beauty brand between ceremony and contemporary luxury.</h2>
+      <p class="font-body text-inksoft leading-relaxed mb-4">
+        House of Goddesses needed a brand identity capable of carrying an ambitious positioning: beauty as ritual,
+        rooted in mythology, but presented with the polish of a contemporary luxury label. The brief spanned the
+        full identity system — logotype, motion language for digital campaigns, and packaging design — all of
+        which needed to feel like a single coherent universe from first touch.
+      </p>
+      <p class="font-body text-inksoft leading-relaxed">
+        The core tension to resolve: how do you make something feel ancient and ceremonial, and simultaneously
+        feel like an object someone would proudly display on a vanity in 2024?
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROLE & RESPONSIBILITIES ============ -->
+<section class="px-6 md:px-10 py-16">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-[200px_1fr] gap-10">
+    <span class="label-eyebrow reveal">Role &amp; Responsibilities</span>
+    <div class="reveal d1">
+      <ul class="space-y-3 font-body text-inksoft">
+        <li class="flex gap-3"><span class="text-sakuradeep">—</span> Designed the primary logotype and the "LAMB" monogram lockup, balancing organic curvature with precise geometric construction.</li>
+        <li class="flex gap-3"><span class="text-sakuradeep">—</span> Directed three short motion pieces translating the brand's identity into movement for digital and social platforms.</li>
+        <li class="flex gap-3"><span class="text-sakuradeep">—</span> Developed packaging concepts that carried the brand's mythological references without becoming literal or costume-like.</li>
+        <li class="flex gap-3"><span class="text-sakuradeep">—</span> Built a campaign-ready visual system spanning still imagery, motion, and product application.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREATIVE PROCESS ============ -->
+<section class="px-6 md:px-10 py-16 bg-creamdeep">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-[200px_1fr] gap-10 mb-10">
+      <span class="label-eyebrow reveal">Creative Process</span>
+      <div class="reveal d1">
+        <h2 class="font-display italic text-2xl md:text-3xl mb-4">Organic forms, precise type.</h2>
+        <p class="font-body text-inksoft leading-relaxed max-w-2xl">
+          The starting point was the LAMB monogram — a wordmark constructed from interlocking organic letterforms
+          that echo flowing hair and ritual gesture, set against the precision of a structured grid. This tension
+          between fluid and exact became the visual rule for everything that followed: every motion piece, every
+          packaging surface had to hold both qualities at once.
+        </p>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="reveal case-figure ar-3-4">
+        <img src="https://rinaffff.github.io/rina-portfolio/assets/hog_logo_1.png" alt="House of Goddesses — logotype exploration" loading="lazy"/>
+      </div>
+      <div class="reveal d1 case-figure ar-3-4">
+        <img src="https://rinaffff.github.io/rina-portfolio/assets/hog_logo_2.png" alt="House of Goddesses — logo variant" loading="lazy"/>
+      </div>
+    </div>
+    <p class="font-body text-sm text-inksoft italic mt-4 reveal">Fig. 1–2 — Logotype and monogram exploration, balancing organic gesture with grid precision.</p>
+  </div>
+</section>
+
+<!-- ============ SOLUTION & DELIVERABLES ============ -->
+<section class="px-6 md:px-10 py-16">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-[200px_1fr] gap-10 mb-10">
+      <span class="label-eyebrow reveal">Solution &amp; Deliverables</span>
+      <div class="reveal d1">
+        <h2 class="font-display italic text-2xl md:text-3xl mb-4">A system that moves.</h2>
+        <p class="font-body text-inksoft leading-relaxed max-w-2xl">
+          The final identity spans static and motion applications — campaign imagery, packaging, and three
+          motion pieces that bring the brand's ceremonial energy to life across social and digital placements.
+        </p>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6 mb-6">
+      <div class="reveal case-figure ar-16-9" style="grid-column:span 2;">
+        <img src="https://rinaffff.github.io/rina-portfolio/assets/hog_design_2.jpg" alt="House of Goddesses — campaign spread" loading="lazy"/>
+      </div>
+      <div class="reveal case-figure ar-4-3">
+        <img src="https://rinaffff.github.io/rina-portfolio/assets/hog_design_3.jpg" alt="House of Goddesses — identity detail" loading="lazy"/>
+      </div>
+      <div class="reveal d1 case-figure ar-4-3">
+        <img src="https://rinaffff.github.io/rina-portfolio/assets/hog_design_4.jpg" alt="House of Goddesses — packaging" loading="lazy"/>
+      </div>
+    </div>
+    <p class="font-body text-sm text-inksoft italic mb-8 reveal">Fig. 3–5 — Campaign spread, identity application and packaging detail.</p>
+
+    <!-- Motion -->
+    <h3 class="font-display italic text-xl mb-4 reveal">Motion Direction</h3>
+    <div class="grid grid-cols-3 gap-4">
+      <div class="reveal case-figure ar-9-16">
+        <video src="https://rinaffff.github.io/rina-portfolio/assets/hog_vid_1.mp4" autoplay muted loop playsinline></video>
+      </div>
+      <div class="reveal d1 case-figure ar-9-16">
+        <video src="https://rinaffff.github.io/rina-portfolio/assets/hog_vid_2.mp4" autoplay muted loop playsinline></video>
+      </div>
+      <div class="reveal d2 case-figure ar-9-16">
+        <video src="https://rinaffff.github.io/rina-portfolio/assets/hog_vid_3.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </div>
+    <p class="font-body text-sm text-inksoft italic mt-4 reveal">Fig. 6–8 — Motion direction for digital and social campaign placements.</p>
+  </div>
+</section>
+
+<!-- ============ IMPACT & RESULTS ============ -->
+<section class="px-6 md:px-10 py-16 bg-matchadeep text-cream">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-[200px_1fr] gap-10">
+    <span class="label-eyebrow text-sakura reveal">Impact &amp; Results</span>
+    <div class="reveal d1 grid md:grid-cols-3 gap-8">
+      <div>
+        <p class="font-display italic text-4xl mb-2">1</p>
+        <p class="font-body text-cream/75 text-sm">Unified visual system spanning logotype, packaging and motion — designed to feel like a single brand world across every touchpoint.</p>
+      </div>
+      <div>
+        <p class="font-display italic text-4xl mb-2">3</p>
+        <p class="font-body text-cream/75 text-sm">Motion pieces produced for digital and social campaign rollout, extending the identity into movement.</p>
+      </div>
+      <div>
+        <p class="font-display italic text-4xl mb-2">2-in-1</p>
+        <p class="font-body text-cream/75 text-sm">A logotype that reads as both an ornamental monogram and a precise, scalable wordmark — functional from packaging to billboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLS ============ -->
+<section class="px-6 md:px-10 py-16">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-[200px_1fr] gap-10">
+    <span class="label-eyebrow reveal">Tools &amp; Technologies</span>
+    <div class="reveal d1 flex flex-wrap gap-3">
+      <span class="tag-pill">Adobe Illustrator</span>
+      <span class="tag-pill">Adobe Photoshop</span>
+      <span class="tag-pill">Adobe After Effects</span>
+      <span class="tag-pill">Adobe Premiere Pro</span>
+      <span class="tag-pill">Brand Identity Systems</span>
+      <span class="tag-pill">Packaging Design</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEXT PROJECT CTA ============ -->
+<section class="px-6 md:px-10 py-20 border-t border-ink/10">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+    <div class="reveal">
+      <span class="label-eyebrow">Next Case Study</span>
+      <h2 class="font-display italic text-3xl md:text-4xl mt-2">GCDS — Pop-Up Stores →</h2>
+    </div>
+    <a href="project-gcds-popup.html" class="btn btn-primary reveal d1">View Case Study</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="px-6 md:px-10 py-12 border-t border-ink/10">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex items-center gap-4">
+      <div class="hanko hanko-gold">理奈</div>
+      <div>
+        <p class="font-display italic">Rina Benamar</p>
+        <p class="font-sans text-xs tracking-widest uppercase text-inksoft">Graphic Designer &amp; Art Director</p>
+      </div>
+    </div>
+    <p class="font-sans text-xs tracking-widest uppercase text-inksoft">&copy; 2025 — All Rights Reserved</p>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', menu.classList.contains('open'));
+  });
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

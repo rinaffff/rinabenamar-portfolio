@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact — Rina Benamar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { cream:'#FAF6F0', creamdeep:'#F2EBE1', sakura:'#F3DCE2', sakuradeep:'#C98A9C',
+        matcha:'#8B9B6E', matchadeep:'#4F5A3C', gold:'#C6A664', ink:'#2A2823', inksoft:'#6B6760' },
+      fontFamily: { display:['Playfair Display','Georgia','serif'], body:['Lora','Georgia','serif'], sans:['Montserrat','sans-serif'] }
+    }}
+  }
+</script>
+</head>
+<body class="bg-cream text-ink font-body">
+
+<!-- ============ NAVIGATION ============ -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="index.html" class="font-display italic text-xl tracking-wide">Rina Benamar</a>
+    <nav class="hidden md:flex items-center gap-10">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5" aria-label="Open menu" aria-expanded="false">
+      <span class="block w-6 h-px bg-ink"></span>
+      <span class="block w-6 h-px bg-ink"></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu md:hidden absolute top-full left-0 right-0 bg-cream border-b border-ink/10">
+    <nav class="flex flex-col px-6 py-6 gap-5">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ CONTACT ============ -->
+<section class="pt-40 pb-24 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+
+    <!-- Left: intro + links -->
+    <div class="reveal">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="hanko">連絡</div>
+        <span class="label-eyebrow">Contact</span>
+      </div>
+      <h1 class="font-display italic text-4xl md:text-5xl leading-tight mb-6">
+        Open to opportunities across Japan and internationally.
+      </h1>
+      <p class="font-body text-inksoft leading-relaxed mb-10 max-w-md">
+        Whether it's a full-time role, a freelance collaboration, or simply a conversation about a project — I'd love to hear from you. I typically respond within 48 hours.
+      </p>
+
+      <div class="space-y-5">
+        <a href="mailto:benamarrina@gmail.com" class="flex items-center gap-4 group">
+          <div class="hanko hanko-matcha text-sm">@</div>
+          <div>
+            <p class="font-sans text-xs tracking-widest uppercase text-inksoft">Email</p>
+            <p class="font-display italic text-lg group-hover:text-sakuradeep transition-colors">benamarrina@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/rinabenamar" target="_blank" rel="noopener" class="flex items-center gap-4 group">
+          <div class="hanko hanko-matcha text-sm">in</div>
+          <div>
+            <p class="font-sans text-xs tracking-widest uppercase text-inksoft">LinkedIn</p>
+            <p class="font-display italic text-lg group-hover:text-sakuradeep transition-colors">linkedin.com/in/rinabenamar</p>
+          </div>
+        </a>
+        <a href="https://behance.net/rinabenamar" target="_blank" rel="noopener" class="flex items-center gap-4 group">
+          <div class="hanko hanko-matcha text-sm">Bē</div>
+          <div>
+            <p class="font-sans text-xs tracking-widest uppercase text-inksoft">Behance</p>
+            <p class="font-display italic text-lg group-hover:text-sakuradeep transition-colors">behance.net/rinabenamar</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: form -->
+    <div class="reveal d1">
+      <form class="space-y-6" action="#" method="POST" onsubmit="return handleSubmit(event)">
+        <div>
+          <label for="name" class="font-sans text-xs tracking-widest uppercase text-inksoft block mb-2">Name</label>
+          <input type="text" id="name" name="name" required
+            class="w-full bg-transparent border-b border-ink/20 py-3 font-body focus:outline-none focus:border-matchadeep transition-colors"
+            placeholder="Your name"/>
+        </div>
+        <div>
+          <label for="email" class="font-sans text-xs tracking-widest uppercase text-inksoft block mb-2">Email</label>
+          <input type="email" id="email" name="email" required
+            class="w-full bg-transparent border-b border-ink/20 py-3 font-body focus:outline-none focus:border-matchadeep transition-colors"
+            placeholder="you@company.com"/>
+        </div>
+        <div>
+          <label for="message" class="font-sans text-xs tracking-widest uppercase text-inksoft block mb-2">Message</label>
+          <textarea id="message" name="message" rows="5" required
+            class="w-full bg-transparent border-b border-ink/20 py-3 font-body focus:outline-none focus:border-matchadeep transition-colors resize-none"
+            placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-full md:w-auto">Send Message</button>
+        <p id="formNote" class="font-body text-sm text-inksoft italic"></p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="px-6 md:px-10 py-12 border-t border-ink/10">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex items-center gap-4">
+      <div class="hanko hanko-gold">理奈</div>
+      <div>
+        <p class="font-display italic">Rina Benamar</p>
+        <p class="font-sans text-xs tracking-widest uppercase text-inksoft">Graphic Designer &amp; Art Director</p>
+      </div>
+    </div>
+    <p class="font-sans text-xs tracking-widest uppercase text-inksoft">&copy; 2025 — All Rights Reserved</p>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', menu.classList.contains('open'));
+  });
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Static form — no backend. Provide friendly feedback and reset.
+  // To make this functional, connect to a form service (e.g. Formspree) by
+  // changing the <form action="..."> to that service's endpoint.
+  function handleSubmit(e) {
+    e.preventDefault();
+    const note = document.getElementById('formNote');
+    note.textContent = "Thank you — this form isn't yet connected to a backend. Please email benamarrina@gmail.com directly for now.";
+    return false;
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* ============================================================
+   Tailwind input file
+   Run via Tailwind CLI to generate a compiled stylesheet, e.g.:
+
+     npx tailwindcss -i ./input.css -o ./assets/css/tailwind.css --watch
+
+   NOTE: The pages in this project currently load Tailwind via the
+   CDN script (cdn.tailwindcss.com) for zero-build simplicity on
+   GitHub Pages. This input.css + tailwind.config.js pair is provided
+   so the project can be migrated to a compiled Tailwind build at any
+   time without changing the design tokens.
+   ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom component layer — shared brand styles also live in
+   assets/css/style.css (hanko seal, nav links, project cards, etc.)
+   Import that file alongside the compiled Tailwind output, or move
+   its contents into @layer components below if you prefer a single
+   stylesheet. */
+@layer components {
+  .btn-base {
+    @apply inline-flex items-center gap-2 font-sans text-xs tracking-[0.2em] uppercase
+           px-8 py-3 border border-ink text-ink transition-all duration-300;
+  }
+}

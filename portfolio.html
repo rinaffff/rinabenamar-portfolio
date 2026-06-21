@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Portfolio — Rina Benamar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { cream:'#FAF6F0', creamdeep:'#F2EBE1', sakura:'#F3DCE2', sakuradeep:'#C98A9C',
+        matcha:'#8B9B6E', matchadeep:'#4F5A3C', gold:'#C6A664', ink:'#2A2823', inksoft:'#6B6760' },
+      fontFamily: { display:['Playfair Display','Georgia','serif'], body:['Lora','Georgia','serif'], sans:['Montserrat','sans-serif'] }
+    }}
+  }
+</script>
+</head>
+<body class="bg-cream text-ink font-body">
+
+<!-- ============ NAVIGATION ============ -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="index.html" class="font-display italic text-xl tracking-wide">Rina Benamar</a>
+    <nav class="hidden md:flex items-center gap-10">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link active">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5" aria-label="Open menu" aria-expanded="false">
+      <span class="block w-6 h-px bg-ink"></span>
+      <span class="block w-6 h-px bg-ink"></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu md:hidden absolute top-full left-0 right-0 bg-cream border-b border-ink/10">
+    <nav class="flex flex-col px-6 py-6 gap-5">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link active">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ PAGE HEADER ============ -->
+<section class="pt-40 pb-16 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal flex items-center gap-4 mb-6">
+      <div class="hanko">作品</div>
+      <span class="label-eyebrow">Selected Case Studies</span>
+    </div>
+    <h1 class="reveal d1 font-display italic text-4xl md:text-6xl">Portfolio</h1>
+    <p class="reveal d2 font-body italic text-inksoft mt-4 max-w-xl">
+      Four projects spanning visual identity, beauty, retail strategy and motion direction —
+      each approached as a complete brand world.
+    </p>
+
+    <!-- Filters -->
+    <div class="reveal d3 flex flex-wrap gap-3 mt-10" role="group" aria-label="Filter projects by category">
+      <button class="filter-btn tag-pill" data-filter="all" style="background:var(--matchadeep);color:var(--cream);border-color:var(--matchadeep);">All</button>
+      <button class="filter-btn tag-pill" data-filter="identity">Identity</button>
+      <button class="filter-btn tag-pill" data-filter="beauty">Beauty</button>
+      <button class="filter-btn tag-pill" data-filter="retail">Retail</button>
+      <button class="filter-btn tag-pill" data-filter="motion">Motion</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECT GRID ============ -->
+<section class="px-6 md:px-10 pb-24">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+
+    <a href="project-selma-feriani.html" class="proj-card reveal" data-cat="identity">
+      <div class="proj-img">
+        <img src="https://rinaffff.github.io/rina-portfolio/assets/sfg_b_2.png" alt="Selma Feriani Gallery" loading="lazy"/>
+        <div class="proj-overlay"><span>View Case Study</span></div>
+      </div>
+      <span class="proj-tag">Visual Identity · Cultural Institution</span>
+      <h3 class="proj-title">Selma Feriani Gallery</h3>
+      <p class="font-body text-sm text-inksoft mt-2 max-w-md">An identity system for a contemporary art gallery — typography, editorial design, and a digital presence built for an international audience.</p>
+    </a>
+
+    <a href="project-house-of-goddesses.html" class="proj-card reveal d1" data-cat="identity beauty motion">
+      <div class="proj-img">
+        <img src="https://rinaffff.github.io/rina-portfolio/assets/hog_design_3.jpg" alt="House of Goddesses" loading="lazy"/>
+        <div class="proj-overlay"><span>View Case Study</span></div>
+      </div>
+      <span class="proj-tag">Brand Identity · Beauty · Motion</span>
+      <h3 class="proj-title">House of Goddesses</h3>
+      <p class="font-body text-sm text-inksoft mt-2 max-w-md">A full brand identity for an elevated beauty label — logotype, packaging, and motion graphics rooted in feminine power and ritual.</p>
+    </a>
+
+    <a href="project-gcds-popup.html" class="proj-card reveal d2" data-cat="retail identity">
+      <div class="proj-img" style="background:linear-gradient(135deg,#F3DCE2,#8B9B6E);">
+        <div class="proj-overlay" style="opacity:1;background:linear-gradient(to top, rgba(42,40,35,.5), transparent 60%);">
+          <span>View Case Study</span>
+        </div>
+      </div>
+      <span class="proj-tag">Visual Merchandising · Retail Strategy</span>
+      <h3 class="proj-title">GCDS — Pop-Up Stores</h3>
+      <p class="font-body text-sm text-inksoft mt-2 max-w-md">A retail concept for four simultaneous international pop-up stores — each adapted to its city's cultural context.</p>
+    </a>
+
+    <a href="project-kabeah.html" class="proj-card reveal d3" data-cat="motion beauty">
+      <div class="proj-img">
+        <video src="https://rinaffff.github.io/rina-portfolio/assets/belle_épine.mp4" autoplay muted loop playsinline></video>
+        <div class="proj-overlay"><span>View Case Study</span></div>
+      </div>
+      <span class="proj-tag">Art Direction · Stop Motion · Fragrance</span>
+      <h3 class="proj-title">Kabéah</h3>
+      <p class="font-body text-sm text-inksoft mt-2 max-w-md">Hand-crafted stop-motion direction for a fragrance brand — tactile sets built and shot frame by frame.</p>
+    </a>
+
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="px-6 md:px-10 py-12 border-t border-ink/10">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex items-center gap-4">
+      <div class="hanko hanko-gold">理奈</div>
+      <div>
+        <p class="font-display italic">Rina Benamar</p>
+        <p class="font-sans text-xs tracking-widest uppercase text-inksoft">Graphic Designer &amp; Art Director</p>
+      </div>
+    </div>
+    <p class="font-sans text-xs tracking-widest uppercase text-inksoft">&copy; 2025 — All Rights Reserved</p>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', menu.classList.contains('open'));
+  });
+
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Filtering
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.proj-card');
+  filterBtns.forEach(b => b.addEventListener('click', () => {
+    const f = b.dataset.filter;
+    filterBtns.forEach(x => { x.style.background=''; x.style.color=''; x.style.borderColor=''; });
+    b.style.background = 'var(--matchadeep)'; b.style.color = 'var(--cream)'; b.style.borderColor = 'var(--matchadeep)';
+    cards.forEach(c => {
+      const cats = (c.dataset.cat || '').split(' ');
+      c.style.display = (f === 'all' || cats.includes(f)) ? '' : 'none';
+    });
+  }));
+</script>
+</body>
+</html>

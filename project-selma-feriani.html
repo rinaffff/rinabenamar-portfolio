@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Selma Feriani Gallery — Case Study — Rina Benamar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { cream:'#FAF6F0', creamdeep:'#F2EBE1', sakura:'#F3DCE2', sakuradeep:'#C98A9C',
+        matcha:'#8B9B6E', matchadeep:'#4F5A3C', gold:'#C6A664', ink:'#2A2823', inksoft:'#6B6760' },
+      fontFamily: { display:['Playfair Display','Georgia','serif'], body:['Lora','Georgia','serif'], sans:['Montserrat','sans-serif'] }
+    }}
+  }
+</script>
+</head>
+<body class="bg-cream text-ink font-body">
+
+<!-- ============ NAVIGATION ============ -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="index.html" class="font-display italic text-xl tracking-wide">Rina Benamar</a>
+    <nav class="hidden md:flex items-center gap-10">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link active">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5" aria-label="Open menu" aria-expanded="false">
+      <span class="block w-6 h-px bg-ink"></span>
+      <span class="block w-6 h-px bg-ink"></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu md:hidden absolute top-full left-0 right-0 bg-cream border-b border-ink/10">
+    <nav class="flex flex-col px-6 py-6 gap-5">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link active">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ CASE STUDY HERO ============ -->
+<section class="pt-40 pb-16 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal flex items-center gap-4 mb-6">
+      <div class="hanko">画廊</div>
+      <span class="label-eyebrow">Case Study 01 · Visual Identity</span>
+    </div>
+    <h1 class="reveal d1 font-display italic text-4xl md:text-6xl mb-4">Selma Feriani Gallery</h1>
+    <p class="reveal d2 font-body text-inksoft max-w-2xl">
+      A visual identity system for a contemporary art gallery championing artists from North Africa and the Middle East — built to carry institutional authority while giving the art room to breathe.
+    </p>
+
+    <div class="reveal d3 grid grid-cols-2 md:grid-cols-4 gap-6 mt-10 pt-8 border-t border-ink/10">
+      <div>
+        <p class="font-sans text-xs tracking-widest uppercase text-sakuradeep mb-1">Client</p>
+        <p class="font-display italic">Selma Feriani Gallery</p>
+      </div>
+      <div>
+        <p class="font-sans text-xs tracking-widest uppercase text-sakuradeep mb-1">Sector</p>
+        <p class="font-display italic">Cultural Institution</p>
+      </div>
+      <div>
+        <p class="font-sans text-xs tracking-widest uppercase text-sakuradeep mb-1">Role</p>
+        <p class="font-display italic">Lead Graphic Designer</p>
+      </div>
+      <div>
+        <p class="font-sans text-xs tracking-widest uppercase text-sakuradeep mb-1">Deliverables</p>
+        <p class="font-display italic">Identity, Editorial, Digital</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hero image -->
+<section class="px-6 md:px-10 pb-20">
+  <div class="max-w-6xl mx-auto reveal">
+    <div class="case-figure ar-16-9">
+      <img src="https://rinaffff.github.io/rina-portfolio/assets/sfg_b_3.png" alt="Selma Feriani Gallery — editorial spread" loading="lazy"/>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTEXT & BRIEF ============ -->
+<section class="px-6 md:px-10 py-16 bg-creamdeep">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-[200px_1fr] gap-10">
+    <span class="label-eyebrow reveal">Context &amp; Brief</span>
+    <div class="reveal d1">
+      <h2 class="font-display italic text-2xl md:text-3xl mb-4">A gallery voice that matches the weight of its programme.</h2>
+      <p class="font-body text-inksoft leading-relaxed mb-4">
+        Selma Feriani Gallery presents major work by artists from North Africa and the Middle East — voices that deserve
+        institutional space, weight, and elegance on the international stage. The brief: design a visual identity that
+        could sit comfortably alongside London and Paris's most established contemporary galleries, while remaining
+        legible across both physical exhibition spaces and digital platforms.
+      </p>
+      <p class="font-body text-inksoft leading-relaxed">
+        The challenge was restraint — building a system rigorous enough to feel institutional, but quiet enough
+        that it never competes with the art itself.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROLE & RESPONSIBILITIES ============ -->
+<section class="px-6 md:px-10 py-16">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-[200px_1fr] gap-10">
+    <span class="label-eyebrow reveal">Role &amp; Responsibilities</span>
+    <div class="reveal d1">
+      <ul class="space-y-3 font-body text-inksoft">
+        <li class="flex gap-3"><span class="text-sakuradeep">—</span> Developed the gallery's typographic hierarchy and editorial grid system, applied consistently across print and digital formats.</li>
+        <li class="flex gap-3"><span class="text-sakuradeep">—</span> Designed responsive desktop and mobile layouts for the gallery's online presence, prioritising large-format imagery of artworks.</li>
+        <li class="flex gap-3"><span class="text-sakuradeep">—</span> Established spacing and layout rules that scale from a single artwork page to a full exhibition catalogue.</li>
+        <li class="flex gap-3"><span class="text-sakuradeep">—</span> Presented and iterated the identity system directly with gallery leadership across multiple review rounds.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREATIVE PROCESS ============ -->
+<section class="px-6 md:px-10 py-16 bg-creamdeep">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-[200px_1fr] gap-10 mb-10">
+      <span class="label-eyebrow reveal">Creative Process</span>
+      <div class="reveal d1">
+        <h2 class="font-display italic text-2xl md:text-3xl mb-4">Restraint as respect.</h2>
+        <p class="font-body text-inksoft leading-relaxed max-w-2xl">
+          Early exploration focused on typographic pairings that could feel both editorial and exhibition-ready —
+          serif headlines for gravitas, paired with a clean grid that gives every artwork generous breathing room.
+          Mobile-first wireframing ensured the gallery's growing international audience could browse exhibitions
+          comfortably from a phone, a frequent overlooked detail in gallery websites of this scale.
+        </p>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="reveal case-figure ar-3-4">
+        <img src="https://rinaffff.github.io/rina-portfolio/assets/sfg_m.png" alt="Selma Feriani Gallery — mobile wireframe exploration" loading="lazy"/>
+      </div>
+      <div class="reveal d1 case-figure ar-3-4">
+        <img src="https://rinaffff.github.io/rina-portfolio/assets/sfg_m2.png" alt="Selma Feriani Gallery — mobile detail view" loading="lazy"/>
+      </div>
+    </div>
+    <p class="font-body text-sm text-inksoft italic mt-4 reveal">Fig. 1–2 — Mobile layout exploration, prioritising artwork imagery over chrome.</p>
+  </div>
+</section>
+
+<!-- ============ SOLUTION & DELIVERABLES ============ -->
+<section class="px-6 md:px-10 py-16">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-[200px_1fr] gap-10 mb-10">
+      <span class="label-eyebrow reveal">Solution &amp; Deliverables</span>
+      <div class="reveal d1">
+        <h2 class="font-display italic text-2xl md:text-3xl mb-4">A system built to scale.</h2>
+        <p class="font-body text-inksoft leading-relaxed max-w-2xl">
+          The final identity centres on a flexible editorial grid, a refined serif/sans pairing, and a desktop
+          experience that lets each artist's work take full visual precedence — exactly the kind of quiet
+          institutional confidence the gallery's programme deserves.
+        </p>
+      </div>
+    </div>
+    <div class="reveal case-figure ar-16-9 mb-2">
+      <img src="https://rinaffff.github.io/rina-portfolio/assets/sfg_b_2.png" alt="Selma Feriani Gallery — desktop identity" loading="lazy"/>
+    </div>
+    <p class="font-body text-sm text-inksoft italic">Fig. 3 — Desktop homepage, full identity system applied.</p>
+  </div>
+</section>
+
+<!-- ============ IMPACT & RESULTS ============ -->
+<section class="px-6 md:px-10 py-16 bg-matchadeep text-cream">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-[200px_1fr] gap-10">
+    <span class="label-eyebrow text-sakura reveal">Impact &amp; Results</span>
+    <div class="reveal d1 grid md:grid-cols-3 gap-8">
+      <div>
+        <p class="font-display italic text-4xl mb-2">100%</p>
+        <p class="font-body text-cream/75 text-sm">Responsive across desktop, tablet and mobile — critical for an international, mobile-first audience.</p>
+      </div>
+      <div>
+        <p class="font-display italic text-4xl mb-2">2×</p>
+        <p class="font-body text-cream/75 text-sm">Layout templates built to scale from single-artwork pages to full exhibition catalogues without redesign.</p>
+      </div>
+      <div>
+        <p class="font-display italic text-4xl mb-2">∞</p>
+        <p class="font-body text-cream/75 text-sm">A flexible grid system designed to support the gallery's growing roster of exhibiting artists indefinitely.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLS ============ -->
+<section class="px-6 md:px-10 py-16">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-[200px_1fr] gap-10">
+    <span class="label-eyebrow reveal">Tools &amp; Technologies</span>
+    <div class="reveal d1 flex flex-wrap gap-3">
+      <span class="tag-pill">Adobe Illustrator</span>
+      <span class="tag-pill">Adobe InDesign</span>
+      <span class="tag-pill">Adobe Photoshop</span>
+      <span class="tag-pill">Figma</span>
+      <span class="tag-pill">Typography Systems</span>
+      <span class="tag-pill">Responsive Web Design</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEXT PROJECT CTA ============ -->
+<section class="px-6 md:px-10 py-20 border-t border-ink/10">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+    <div class="reveal">
+      <span class="label-eyebrow">Next Case Study</span>
+      <h2 class="font-display italic text-3xl md:text-4xl mt-2">House of Goddesses →</h2>
+    </div>
+    <a href="project-house-of-goddesses.html" class="btn btn-primary reveal d1">View Case Study</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="px-6 md:px-10 py-12 border-t border-ink/10">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex items-center gap-4">
+      <div class="hanko hanko-gold">理奈</div>
+      <div>
+        <p class="font-display italic">Rina Benamar</p>
+        <p class="font-sans text-xs tracking-widest uppercase text-inksoft">Graphic Designer &amp; Art Director</p>
+      </div>
+    </div>
+    <p class="font-sans text-xs tracking-widest uppercase text-inksoft">&copy; 2025 — All Rights Reserved</p>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', menu.classList.contains('open'));
+  });
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About — Rina Benamar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { cream:'#FAF6F0', creamdeep:'#F2EBE1', sakura:'#F3DCE2', sakuradeep:'#C98A9C',
+        matcha:'#8B9B6E', matchadeep:'#4F5A3C', gold:'#C6A664', ink:'#2A2823', inksoft:'#6B6760' },
+      fontFamily: { display:['Playfair Display','Georgia','serif'], body:['Lora','Georgia','serif'], sans:['Montserrat','sans-serif'] }
+    }}
+  }
+</script>
+</head>
+<body class="bg-cream text-ink font-body">
+
+<!-- ============ NAVIGATION ============ -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="index.html" class="font-display italic text-xl tracking-wide">Rina Benamar</a>
+    <nav class="hidden md:flex items-center gap-10">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="about.html" class="nav-link active">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5" aria-label="Open menu" aria-expanded="false">
+      <span class="block w-6 h-px bg-ink"></span>
+      <span class="block w-6 h-px bg-ink"></span>
+    </button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu md:hidden absolute top-full left-0 right-0 bg-cream border-b border-ink/10">
+    <nav class="flex flex-col px-6 py-6 gap-5">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="about.html" class="nav-link active">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO / INTRO ============ -->
+<section class="pt-40 pb-20 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-[1.1fr_0.9fr] gap-14 items-center">
+    <div class="reveal order-2 md:order-1">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="hanko">RB</div>
+        <span class="label-eyebrow">About</span>
+      </div>
+      <h1 class="font-display italic text-4xl md:text-5xl leading-tight mb-6">
+        A designer who builds worlds, trained to do it properly.
+      </h1>
+      <p class="font-body text-inksoft leading-relaxed mb-4">
+        I trained in art direction and graphic design at <strong class="text-ink not-italic">Istituto Marangoni, Paris</strong> — a foundation that taught me to treat every brand as a complete sensory universe, not a collection of assets. Since then, I've worked across cultural institutions, beauty and cosmetics brands, music identities, and food &amp; beverage concepts, building visual systems that carry a brand's values into every touchpoint: logo, campaign, packaging, space, and screen.
+      </p>
+      <p class="font-body text-inksoft leading-relaxed">
+        Based in Tunis, with international training and a working knowledge of French, English, Arabic and Spanish, I'm currently building toward fluency in Japanese — a language I'm learning not as a checkbox, but because I want to understand the culture I'm designing for from the inside.
+      </p>
+    </div>
+    <div class="reveal d1 order-1 md:order-2">
+      <div class="aspect-[4/5] overflow-hidden border border-ink/10" style="border-radius:2px;">
+        <img src="assets/images/profile.jpg" alt="Portrait of Rina Benamar" class="w-full h-full object-cover" loading="lazy"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider-leaf py-2"><span class="text-xs">🌸</span></div>
+
+<!-- ============ DESIGN PHILOSOPHY ============ -->
+<section class="px-6 md:px-10 py-20">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14">
+    <div class="reveal">
+      <span class="label-eyebrow">Philosophy</span>
+      <h2 class="font-display italic text-3xl md:text-4xl mt-3 mb-5">Innovation, within the codes.</h2>
+      <p class="font-body text-inksoft leading-relaxed">
+        My approach starts with restraint: understanding the existing visual language of a culture or category before deciding where to push against it. I believe the most memorable design doesn't reject convention outright — it understands convention deeply enough to know exactly where to bend it.
+      </p>
+    </div>
+    <div class="reveal d1">
+      <p class="font-body text-inksoft leading-relaxed mt-0 md:mt-14">
+        This is especially true working toward the Japanese market, where precision, seasonality, and the relationship between space and object carry meaning that a purely Western design education doesn't teach. I see this not as a constraint, but as a richer design language to learn — one I'm actively studying through Japanese aesthetic philosophy (間 — <em>ma</em>, the value of negative space; 物作り — <em>monozukuri</em>, the dignity of making) and applying to my own work.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="px-6 md:px-10 py-20 bg-creamdeep">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-12">
+      <span class="label-eyebrow">Capabilities</span>
+      <h2 class="font-display italic text-3xl md:text-4xl mt-3">Key Skills</h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="reveal">
+        <h3 class="font-display italic text-xl mb-4 text-matchadeep">Design &amp; Software</h3>
+        <ul class="space-y-2 font-body text-sm text-inksoft">
+          <li>Adobe Photoshop, Illustrator, InDesign</li>
+          <li>Adobe After Effects &amp; Premiere Pro</li>
+          <li>Figma — UI &amp; prototyping</li>
+          <li>Brand identity &amp; typography systems</li>
+          <li>Visual merchandising &amp; spatial design</li>
+          <li>Stop-motion &amp; set-based art direction</li>
+        </ul>
+      </div>
+      <div class="reveal d1">
+        <h3 class="font-display italic text-xl mb-4 text-matchadeep">Soft Skills</h3>
+        <ul class="space-y-2 font-body text-sm text-inksoft">
+          <li>Creative leadership &amp; art direction</li>
+          <li>Cross-cultural communication</li>
+          <li>Concept development &amp; storytelling</li>
+          <li>Client &amp; stakeholder presentation</li>
+          <li>Problem-solving under tight timelines</li>
+          <li>Curiosity-led research practice</li>
+        </ul>
+      </div>
+      <div class="reveal d2">
+        <h3 class="font-display italic text-xl mb-4 text-matchadeep">Languages</h3>
+        <ul class="space-y-3 font-body text-sm text-inksoft">
+          <li class="flex justify-between border-b border-ink/10 pb-2"><span>French</span><span class="tag-pill text-[0.6rem]">Native</span></li>
+          <li class="flex justify-between border-b border-ink/10 pb-2"><span>Arabic</span><span class="tag-pill text-[0.6rem]">Native</span></li>
+          <li class="flex justify-between border-b border-ink/10 pb-2"><span>English</span><span class="tag-pill text-[0.6rem]">Fluent</span></li>
+          <li class="flex justify-between border-b border-ink/10 pb-2"><span>Spanish</span><span class="tag-pill text-[0.6rem]">Intermediate</span></li>
+          <li class="flex justify-between"><span>Japanese</span><span class="tag-pill text-[0.6rem]">N4 → Ongoing</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUE ADD FOR JAPAN ============ -->
+<section class="px-6 md:px-10 py-20 bg-matchadeep text-cream">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-[auto_1fr] gap-10 items-start">
+    <div class="reveal">
+      <div class="hanko hanko-gold" style="border-color:#FAF6F0;color:#FAF6F0;">日本</div>
+    </div>
+    <div class="reveal d1">
+      <span class="label-eyebrow text-sakura">Value Add for Japan</span>
+      <h2 class="font-display italic text-3xl md:text-4xl mt-3 mb-5">An outside perspective, held with care.</h2>
+      <p class="font-body text-cream/80 leading-relaxed mb-4">
+        Working across Tunisia, Europe and international clients has given me a habit of designing for audiences whose visual language isn't my own — and of doing so respectfully, through research rather than assumption. For a Japanese team, I bring a multicultural eye that can identify what reads as fresh or surprising to a global audience, paired with the discipline to ask "does this actually fit here?" before presenting it.
+      </p>
+      <p class="font-body text-cream/80 leading-relaxed">
+        I'm not arriving with a finished opinion about Japanese design — I'm arriving with genuine curiosity, a foundation in Japanese language and aesthetic philosophy, and the creative range to translate a brand's voice across cultural contexts without losing what makes it distinct. That combination — boldness balanced by listening — is, I believe, exactly the kind of outside-in perspective that strengthens a team rather than disrupting it.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="px-6 md:px-10 py-20 text-center">
+  <div class="max-w-2xl mx-auto reveal">
+    <h2 class="font-display italic text-3xl md:text-4xl mb-6">Let's build something together.</h2>
+    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="px-6 md:px-10 py-12 border-t border-ink/10">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex items-center gap-4">
+      <div class="hanko hanko-gold">理奈</div>
+      <div>
+        <p class="font-display italic">Rina Benamar</p>
+        <p class="font-sans text-xs tracking-widest uppercase text-inksoft">Graphic Designer &amp; Art Director</p>
+      </div>
+    </div>
+    <p class="font-sans text-xs tracking-widest uppercase text-inksoft">&copy; 2025 — All Rights Reserved</p>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', menu.classList.contains('open'));
+  });
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

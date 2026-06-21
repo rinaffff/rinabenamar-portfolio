@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rina Benamar — Graphic Designer &amp; Art Director</title>
+<meta name="description" content="Rina Benamar — Graphic Designer &amp; Art Director. Strategic visual narratives for the Japanese market."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream:      '#FAF6F0',
+          creamdeep:  '#F2EBE1',
+          sakura:     '#F3DCE2',
+          sakuradeep: '#C98A9C',
+          matcha:     '#8B9B6E',
+          matchadeep: '#4F5A3C',
+          gold:       '#C6A664',
+          ink:        '#2A2823',
+          inksoft:    '#6B6760',
+        },
+        fontFamily: {
+          display: ['Playfair Display','Georgia','serif'],
+          body:    ['Lora','Georgia','serif'],
+          sans:    ['Montserrat','sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body class="bg-cream text-ink font-body">
+
+<!-- ============ NAVIGATION ============ -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-ink/10">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between">
+    <a href="index.html" class="font-display italic text-xl tracking-wide">Rina Benamar</a>
+
+    <nav class="hidden md:flex items-center gap-10">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <button id="menuBtn" class="md:hidden flex flex-col gap-1.5" aria-label="Open menu" aria-expanded="false">
+      <span class="block w-6 h-px bg-ink"></span>
+      <span class="block w-6 h-px bg-ink"></span>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu md:hidden absolute top-full left-0 right-0 bg-cream border-b border-ink/10">
+    <nav class="flex flex-col px-6 py-6 gap-5">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="portfolio.html" class="nav-link">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="pt-40 pb-24 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal flex items-center gap-4 mb-8">
+      <div class="hanko">理奈</div>
+      <span class="label-eyebrow">Graphic Designer &amp; Art Director · Based in Tunis</span>
+    </div>
+
+    <h1 class="reveal d1 font-display font-medium text-4xl md:text-6xl lg:text-7xl leading-[1.15] max-w-4xl">
+      Transforming brands through <em class="italic text-sakuradeep">strategic visual narratives</em> for the Japanese market.
+    </h1>
+
+    <p class="reveal d2 font-body italic text-lg text-inksoft mt-8 max-w-xl">
+      Marangoni-trained art director crafting brand worlds for luxury, beauty and culture — with a deep curiosity for Japanese aesthetics and an N4 commitment to meeting that world halfway.
+    </p>
+
+    <div class="reveal d3 mt-10 flex flex-wrap gap-4">
+      <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+      <a href="contact.html" class="btn">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider-leaf py-2"><span class="text-xs">🍵</span></div>
+
+<!-- ============ FEATURED PROJECTS ============ -->
+<section class="px-6 md:px-10 py-20">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal flex items-end justify-between mb-12 flex-wrap gap-4">
+      <div>
+        <span class="label-eyebrow">Selected Work</span>
+        <h2 class="font-display italic text-3xl md:text-5xl mt-2">Featured Projects</h2>
+      </div>
+      <a href="portfolio.html" class="nav-link">View All Work →</a>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <a href="project-selma-feriani.html" class="proj-card reveal">
+        <div class="proj-img">
+          <img src="https://rinaffff.github.io/rina-portfolio/assets/sfg_b_2.png" alt="Selma Feriani Gallery — brand identity" loading="lazy"/>
+          <div class="proj-overlay"><span>View Case Study</span></div>
+        </div>
+        <span class="proj-tag">Visual Identity · Cultural Institution</span>
+        <h3 class="proj-title">Selma Feriani Gallery</h3>
+      </a>
+
+      <a href="project-house-of-goddesses.html" class="proj-card reveal d1">
+        <div class="proj-img">
+          <img src="https://rinaffff.github.io/rina-portfolio/assets/hog_design_3.jpg" alt="House of Goddesses — brand identity" loading="lazy"/>
+          <div class="proj-overlay"><span>View Case Study</span></div>
+        </div>
+        <span class="proj-tag">Brand Identity · Beauty</span>
+        <h3 class="proj-title">House of Goddesses</h3>
+      </a>
+
+      <a href="project-gcds-popup.html" class="proj-card reveal d2">
+        <div class="proj-img" style="background:linear-gradient(135deg,#F3DCE2,#8B9B6E);">
+          <div class="proj-overlay" style="opacity:1;background:linear-gradient(to top, rgba(42,40,35,.5), transparent 60%);">
+            <span>View Case Study</span>
+          </div>
+        </div>
+        <span class="proj-tag">Visual Merchandising · Retail Strategy</span>
+        <h3 class="proj-title">GCDS — Pop-Up Stores</h3>
+      </a>
+
+      <a href="project-kabeah.html" class="proj-card reveal d3">
+        <div class="proj-img">
+          <video src="https://rinaffff.github.io/rina-portfolio/assets/belle_épine.mp4" autoplay muted loop playsinline></video>
+          <div class="proj-overlay"><span>View Case Study</span></div>
+        </div>
+        <span class="proj-tag">Art Direction · Motion · Fragrance</span>
+        <h3 class="proj-title">Kabéah</h3>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT TEASER ============ -->
+<section class="px-6 md:px-10 py-20 bg-matchadeep text-cream">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <span class="label-eyebrow text-sakura">About Rina</span>
+      <h2 class="font-display italic text-3xl md:text-4xl mt-3 leading-snug">
+        Trained in Paris. Curious about Tokyo. Building bridges in between.
+      </h2>
+    </div>
+    <div class="reveal d1">
+      <p class="font-body text-cream/80 leading-relaxed">
+        A Marangoni-trained art director with international experience across cultural institutions, beauty brands and music identities — currently studying Japanese (N4) and developing a long-term commitment to working with Japanese creative teams. Curiosity, rigour, and a sensitivity to cultural nuance define every project.
+      </p>
+      <a href="about.html" class="btn mt-6" style="border-color:#FAF6F0;color:#FAF6F0;">Read Full Bio</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="px-6 md:px-10 py-12 border-t border-ink/10">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex items-center gap-4">
+      <div class="hanko hanko-gold">理奈</div>
+      <div>
+        <p class="font-display italic">Rina Benamar</p>
+        <p class="font-sans text-xs tracking-widest uppercase text-inksoft">Graphic Designer &amp; Art Director</p>
+      </div>
+    </div>
+    <p class="font-sans text-xs tracking-widest uppercase text-inksoft">&copy; 2025 — All Rights Reserved</p>
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', menu.classList.contains('open'));
+  });
+
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: .1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
